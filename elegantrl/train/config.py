@@ -46,7 +46,7 @@ class Arguments:
         self.soft_update_tau = 2 ** -8  # 2 ** -8 ~= 5e-3
 
         '''Arguments for device'''
-        self.worker_num = 2  # rollout workers number pre GPU (adjust it to get high GPU usage)
+        self.worker_num = 1  # rollout workers number pre GPU (adjust it to get high GPU usage)
         self.thread_num = 8  # cpu_num for pytorch, `torch.set_num_threads(self.num_threads)`
         self.random_seed = 0  # initialize random seed in self.init_before_training()
         self.learner_gpus = 0  # `int` means the ID of single GPU, -1 means CPU
