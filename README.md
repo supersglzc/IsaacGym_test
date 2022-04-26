@@ -21,5 +21,5 @@ if __name__ == '__main__':
     DRL_ID = int(sys.argv[2]) if len(sys.argv) > 2 else 1
     ENV_ID = int(sys.argv[3]) if len(sys.argv) > 3 else 1
 
-    demo_a2c_ppo(GPU_ID, DRL_ID, ENV_ID)
+    demo(GPU_ID, DRL_ID, ENV_ID)
 ```

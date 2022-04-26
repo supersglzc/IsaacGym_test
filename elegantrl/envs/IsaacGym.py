@@ -210,9 +210,9 @@ class IsaacOneEnv(IsaacVecEnv):
         return state, reward, done, info_dict
 
 
-def check_isaac_gym():
+def check_isaac_gym(env_name):
     gpu_id = 5
-    env = IsaacVecEnv(env_name='Ant', env_num=1024, sim_device_id=gpu_id, rl_device_id=gpu_id)
+    env = IsaacVecEnv(env_name='Ant', env_num=1024, sim_device_id=gpu_id, rl_device_id=gpu_id, should_print=True)
     states = env.reset()
     print('\n\nstates.shape', states.shape)
 
@@ -233,7 +233,6 @@ def check_isaac_gym():
     rewards_ary = list()
     dones_ary = list()
     env.reset()
-    print()
     for _ in trange(env.max_step * 2):
         action = torch.rand((env.env_num, env.action_dim), dtype=torch.float32, device=device)
         states, rewards, dones, info_dict = env.step(action)

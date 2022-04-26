@@ -128,7 +128,7 @@ class AgentPPO(AgentBase):
             self.optimizer_update(self.act_optimizer, obj_actor)
 
         a_std_log = getattr(self.act, 'a_std_log', torch.zeros(1)).mean()
-        return obj_critic.item(), -obj_actor.item(), a_std_log.item()  # logging_tuple
+        return obj_critic.item(), -obj_actor.item(), a_std_log.item() * 100  # logging_tuple
 
     def get_reward_sum_raw(self, buf_len, buf_reward, buf_mask, buf_value) -> (torch.Tensor, torch.Tensor):
         """
