@@ -212,7 +212,7 @@ class IsaacOneEnv(IsaacVecEnv):
 
 def check_isaac_gym(env_name):
     gpu_id = 5
-    env = IsaacVecEnv(env_name='Ant', env_num=1024, sim_device_id=gpu_id, rl_device_id=gpu_id, should_print=True)
+    env = IsaacVecEnv(env_name=env_name, env_num=1024, sim_device_id=gpu_id, rl_device_id=gpu_id, should_print=True)
     states = env.reset()
     print('\n\nstates.shape', states.shape)
 

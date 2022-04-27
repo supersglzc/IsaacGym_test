@@ -16,9 +16,9 @@ def demo(gpu_id):
     env_args = {
         'env_num': 1024,
         'env_name': env_name,
-        'max_step': 1000,
-        'state_dim': 108,
-        'action_dim': 21,
+        'max_step': 600,
+        'state_dim': 211,
+        'action_dim': 20,
         'if_discrete': False,
         'target_return': 15000.,
 
@@ -30,9 +30,9 @@ def demo(gpu_id):
     args.eval_env_args = {
         'env_num': 1,
         'env_name': env_name,
-        'max_step': 1000,
-        'state_dim': 108,
-        'action_dim': 21,
+        'max_step': 600,
+        'state_dim': 211,
+        'action_dim': 20,
         'if_discrete': False,
         'target_return': 15000.,
 
