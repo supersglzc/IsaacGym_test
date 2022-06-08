@@ -3,7 +3,7 @@ Run the check program first.
 """
 run the following code in bash before running.
 export LD_LIBRARY_PATH=/xfs/home/podracer_steven/anaconda3/envs/rlgpu/lib
-export LD_LIBRARY_PATH=/afs/csail.mit.edu/u/s/supersglzc/miniconda3/envs/rlgpu/lib
+export LD_LIBRARY_PATH=/data/pulkitag/misc/steven/anaconda3/envs/rlgpu/lib/
 can't use os.environ['LD_LIBRARY_PATH'] = /xfs/home/podracer_steven/anaconda3/envs/rlgpu/lib
 """
 
