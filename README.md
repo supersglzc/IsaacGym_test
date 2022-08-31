@@ -3,6 +3,7 @@ Run the check program first.
 """
 run the following code in bash before running.
 export LD_LIBRARY_PATH=/xfs/home/podracer_steven/anaconda3/envs/rlgpu/lib
+export WANDB_API_KEY=dca4b6213605d6204c8f2254f5a6989b9ed0dcae
 export LD_LIBRARY_PATH=/data/pulkitag/misc/steven/anaconda3/envs/rlgpu/lib/
 can't use os.environ['LD_LIBRARY_PATH'] = /xfs/home/podracer_steven/anaconda3/envs/rlgpu/lib
 """
